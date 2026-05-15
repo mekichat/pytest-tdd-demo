@@ -13,6 +13,8 @@ def my_capitalize(text: str | None) -> str:
        return "" 
     
     lowered = text.lower()
+    
+    lowered = lowered.strip()
      
     for i, ch in enumerate(lowered):
          if ch.isalpha():

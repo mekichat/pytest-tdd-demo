@@ -35,6 +35,7 @@ import pytest
     "input, expected",
     [
         ("kimmo", "Kimmo"),
+        ("  kimmo  ", "Kimmo"), # detta borde också fungera
         ("KIMMO AHOLA", "Kimmo ahola"),
         ("a", "A"),
         ("123ABC", "123Abc"), # hade vänt 
